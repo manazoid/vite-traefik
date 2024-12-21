@@ -1,0 +1,13 @@
+#log:
+#  level: "DEBUG"
+
+entryPoints:
+  web:
+    address: :80
+
+serversTransport:
+  insecureSkipVerify: true
+
+providers:
+  file:
+    directory: ./dynamic

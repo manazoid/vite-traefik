@@ -1,0 +1,11 @@
+http:
+  routers:
+    mantine:
+      rule: Host(`dev.localhost`)
+      service: mantine
+
+  services:
+    mantine:
+      loadBalancer:
+        servers:
+          - url: http://host.docker.internal:5173
